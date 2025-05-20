@@ -1,0 +1,1 @@
+"command": "${fileDirname}/${fileBasenameNoExtension}.out < input.txt"

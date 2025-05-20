@@ -1,0 +1,24 @@
+// bits/stdc++.h
+#pragma once
+
+#include <iostream>
+#include <vector>
+#include <algorithm>
+#include <cmath>
+#include <map>
+#include <set>
+#include <unordered_map>
+#include <unordered_set>
+#include <queue>
+#include <stack>
+#include <string>
+#include <sstream>
+#include <iomanip>
+#include <chrono>
+#include <random>
+#include <bitset>
+#include <cassert>
+#include <array>
+#include <deque>
+#include <list>
+#include <functional>
