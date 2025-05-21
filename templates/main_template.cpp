@@ -4,6 +4,7 @@ using namespace std;
 #define int long long
 #define endl '\n'
 #define all(x) (x).begin(), (x).end()
+#define vi vector<int>
 
 const int INF = 2e9,
           MOD = 1e9 + 7,

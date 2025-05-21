@@ -1,4 +1,4 @@
-# Problem 1462E2 - "Pashmak and Parmida's problem"
+# Pashmak and Parmida's problem
 
 [Problem link](https://codeforces.com/problemset/problem/459/D)
 
