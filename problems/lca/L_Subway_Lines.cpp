@@ -90,27 +90,27 @@ void solve()
 {
     int nodes, query;
     cin >> nodes >> query;
-    vvi g(nodes + 1);
+    vvi tree(nodes + 1);
 
     int u, v;
     for (int i = 1; i < nodes; i++)
     {
         cin >> u >> v;
-        g[u].push_back(v);
-        g[v].push_back(u);
+        tree[u].push_back(v);
+        tree[v].push_back(u);
     }
 
-    LCA lca(nodes, g);
+    LCA lca(nodes, tree);
 
     while (query--)
     {
         int a, b, c, d;
         cin >> a >> b >> c >> d;
 
-        int x = lca.dist(a, b) + lca.dist(c, d);
-        int y = min(lca.dist(a, c) + lca.dist(b, d), lca.dist(a, d) + lca.dist(b, c));
+        int total = lca.dist(a, b) + lca.dist(c, d);
+        int external = min(lca.dist(a, c) + lca.dist(b, d), lca.dist(a, d) + lca.dist(b, c));
 
-        int ans = max(0LL, (x - y) / 2 + 1);
+        int ans = max(0LL, (total - external) / 2 + 1);
 
         cout << ans << endl;
     }
